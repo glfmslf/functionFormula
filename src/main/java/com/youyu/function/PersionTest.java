@@ -23,5 +23,6 @@ public class PersionTest {
         System.out.println(collect);
         List<PersonModel> list = data.stream().filter(personModel -> personModel.getAge() <= 18).collect(toList());
         System.out.println(list);
+        System.out.println();
     }
 }
