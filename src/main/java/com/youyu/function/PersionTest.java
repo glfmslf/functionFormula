@@ -21,5 +21,7 @@ public class PersionTest {
                 .filter(person1 -> "男".equals(person1.getSex()))
                 .collect(toList());
         System.out.println(collect);
+        List<PersonModel> list = data.stream().filter(personModel -> personModel.getAge() <= 18).collect(toList());
+        System.out.println(list);
     }
 }
